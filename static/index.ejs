@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="full-w" src="https://maximum.fm/uploads/media_news/2018/07/fda8062da6c007a4536c1a32a828cc0fe0c8e803.jpg?w=1200&h=675&il&q=90&output=jpg">
+    <h1 style="text-align: center;">НАЖМИ НА ПРИВІТАННЯ</h1>
+    <p id="playButton" class="greet">
+            Вітаю тебе із запуском нового "версії життя" - тепер у тебе повний доступ до всіх функцій "Дорослості 1.0". Так, ти вже знаєш, що життя - це не тільки "Hello World", але і неймовірний світ можливостей.
+        Нехай твій код життя завжди буде ефективним, функціональним і, звісно, без помилок. Нехай тобі завжди удаватися знаходити відмінні рішення, як ти робиш це з кодом. І нехай кожен твій "проект" буде завершений з успіхом!
+        Зберігай баланс між "запусками" і "компіляціями" в житті. Нехай твоя програма буде завжди адаптована до змін і вдосконалюється з кожним новим днем. Ти - справжня майстриня в коді, а твій життєвий стек - завжди на оновленні!
+        Бажаю тобі найкращих багфіксів, найефективніших оптимізацій і, звісно ж, найкращого життя в цьому великому "програмному проекті"!
+    </p>
+    <div>
+        <img class="full-w" src="https://png.pngtree.com/background/20210717/original/pngtree-red-and-yellow-rose-border-footer-decoration-background-picture-image_1439560.jpg">
+    </div>
+    <style>
+        .full-w {
+            width: 100%;
+            height: 300px;
+        }
+        p {
+            font-family: 'Arial', sans-serif;
+            color: #336699;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    <script>
+        const playButton = document.getElementById('playButton');
+        const voice = new Audio(`${window.location.href}voice.mp3`);
+        playButton.addEventListener('click', () => {
+            voice.play()
+        })
+    </script>
+</body>
+</body>
+</html>
